@@ -1,13 +1,13 @@
 import React from 'react';
 
-import Header from './Header';
+import PageHead from './PageHead';
 import Gallery from './Gallery';
 
 class Main extends React.Component {
   render(){
     return(
       <div id="main">
-        <Header />
+        <PageHead />
         <Gallery />
       </div>
     )

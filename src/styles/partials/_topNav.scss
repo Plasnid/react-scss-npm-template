@@ -1,0 +1,68 @@
+header {
+  /*header element of the page*/
+  position: fixed;
+  width: 100%;
+  #topNav {
+    #menu-icon{
+      display: none;
+      @include mobile {
+        display: inline-block;
+      }
+    }
+    display: flex;
+    justify-content: space-around;
+    height: 4em;
+    align-items: center;
+    background-color: rgba($color_4, .8);
+    background-image: url('/img/purty_wood.png');
+    font-family: $font_sans;
+    font-size: 1.4em;
+
+    ul {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      @include mobile {
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        border: 5px solid #444;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+        border-radius: 4px 0 4px 4px;
+      }
+      li {
+        @include mobile {
+          text-align: center;
+          width: 100%;
+          padding: 10px 0;
+          margin: 0;
+        }
+        &#company-logo {
+          @include mobile {
+            display: none;
+          }
+        }
+      }
+    }
+
+    a {
+      text-decoration: none;
+      color: $color_1;
+
+      &:hover {
+        color: lighten($color_1, 5%);
+        text-shadow: 1px 1px lighten($color_1,25%);
+      }
+    }
+    @include mobile {
+      &:hover ul {
+        display: block;
+      }
+    }
+  }
+}

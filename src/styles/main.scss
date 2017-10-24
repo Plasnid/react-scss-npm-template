@@ -1,7 +1,46 @@
-#example {
-  h1 {
-    color: green;
-    background-color: yellow;
-    text-align: center;
+@import "vendor/reset-and-normalize.scss";
+
+@import url('https://fonts.googleapis.com/css?family=Poppins|Vollkorn');
+$color_1: #3C1518;
+$color_2: #69140E;
+$color_3: #A44200;
+$color_4: #BE7C4D;
+$color_5: #AD8A64;
+
+$font_sans: Poppins;
+$font_serif: Vollkorn;
+
+@mixin radial-gradient($from, $to) {
+    background: -moz-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, $from), color-stop(100%, $to));
+    background: -webkit-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -o-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: -ms-radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background: radial-gradient(center, circle cover, $from 0%, $to 100%);
+    background-color: $from;
+}
+@mixin tablet {
+  @media (min-width: 768px) and (max-width: 1024px) {
+    @content;
   }
+}
+
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+
+@import "partials/_topNav.scss";
+
+#main {
+  background-color: lighten($color_5, 20%);
+  height: 100vh;
+  /**/
 }
