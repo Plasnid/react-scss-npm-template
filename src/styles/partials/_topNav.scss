@@ -30,7 +30,6 @@ header {
         padding: 20px;
         background: #fff;
         border: 5px solid #444;
-        right: 20px;
         top: 60px;
         width: 50%;
         border-radius: 4px 0 4px 4px;
@@ -61,7 +60,7 @@ header {
     }
     @include mobile {
       &:hover ul {
-        display: block;
+        display: flex;
       }
     }
   }
