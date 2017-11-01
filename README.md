@@ -16,7 +16,8 @@ So far the project includes the following technologies:
 
 My aim is to also include:
 
--	Redux* Mocha
+-	Redux
+-	Mocha
 -	Chai
 -	Whatever else I come across that pulls my attention and seems useful
 
