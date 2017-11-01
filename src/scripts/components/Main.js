@@ -12,8 +12,8 @@ export default class Main extends React.Component {
       <div id="main">
         <PageHead />
         <main>
-          <Route path="/" exact component={Gallery} />
           <Route path="/solo" exact component={SoloProduct} />
+          <Route path="/" exact component={Gallery} />
         </main>
       </div>
     )
