@@ -5,6 +5,9 @@ import Gallery from './Gallery';
 import Main from './Main';
 
 class PageHead extends React.Component {
+  refreshPage(){
+    this.forceUpdate();
+  };
   render(){
     return (
       <Router>

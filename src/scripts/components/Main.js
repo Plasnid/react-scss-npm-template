@@ -6,6 +6,10 @@ import Gallery from './Gallery';
 import SoloProduct from './SoloProduct';
 
 export default class Main extends React.Component {
+  constructor(props){
+    super(props);
+  }
+
   render(){
     const { main } = this.props;
     return(
