@@ -1,6 +1,5 @@
 import { createStore, compose } from 'redux';
 import { syncHistoryWithStore } from 'react-router-redux';
-import { browserHistory } from 'react-router';
 
 //now we import the reducer for our routing
 import rootReducer from './reducers/index';
@@ -15,6 +14,10 @@ const enhancers = compose(
 
 //creating our store with a combination of our reducers, a state object and debug connection
 const store = createStore(rootReducer, defaultState, enhancers);
+//const store = createStore(defaultState);
+
+import createBrowserHistory from 'history/createBrowserHistory';
+const browserHistory = createBrowserHistory();
 
 //connecting our browser history with the store
 export const history = syncHistoryWithStore(browserHistory, store);
