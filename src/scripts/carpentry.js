@@ -3,9 +3,6 @@ import ReactDOM from 'react-dom';
 import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
-//import Provider from 'react-redux';
-//grab the css rom the app file later;
-
 //we will have to move app before we do this
 //import App from './components/App';
 import Main from './components/Main';
