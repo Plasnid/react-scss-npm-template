@@ -1,7 +1,6 @@
 import React from 'react';
-
 import ReactDOM from 'react-dom';
-
+import { createStore } from 'redux';
 import { Provider } from 'react-redux';
 
 //import Provider from 'react-redux';
@@ -23,16 +22,12 @@ import store, { history } from './store';
 //import {sentry_url} from './data/config';
 //Raven.config(sentry_url).install();
 
-
-
 //lets add in our style
 import style from '../styles/main.scss';
+import Root from './components/Root';
 
-const routes = (
-  <Provider store={store}>
-    <Router>
-      <Route path="/" component={Main} />
-    </Router>
-  </Provider>
+//The root now contains the router
+ReactDOM.render(
+  <Root store={store} />,
+  document.getElementById('root')
 )
-ReactDOM.render(routes, document.getElementById('root'));
