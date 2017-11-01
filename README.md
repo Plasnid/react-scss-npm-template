@@ -14,6 +14,10 @@ So far the project includes the following technologies:
 -	React Router V4
 -	jsx
 
-My aim is to also include:* Redux* Mocha* Chai* Whatever else I come across that pulls my attention and seems useful
+My aim is to also include:
+
+-	Redux* Mocha
+-	Chai
+-	Whatever else I come across that pulls my attention and seems useful
 
 It may not be perfect, but if it gives anyone(myself included) a leg up, then give it a look.
