@@ -25,6 +25,6 @@ import Root from './components/Root';
 
 //The root now contains the router
 ReactDOM.render(
-  <Root store={store} />,
+  <Root store={store} history={history}/>,
   document.getElementById('root')
 )
