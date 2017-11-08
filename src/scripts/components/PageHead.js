@@ -10,14 +10,14 @@ class PageHead extends React.Component {
       <header>
         <nav id="topNav">
           <a href="#" id="menu-icon">Menu</a>
-          <ul>
-            <li><Link to="/montessori">Montessori</Link></li>
-            <li><Link to="/smallitems">Small Items</Link></li>
-            <li><Link to="/furniture">Furniture</Link></li>
-            <li id="company-logo"><a href="#home"><img src=""/></a></li>
-            <li><Link to="/custom">Custom</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
-            <li><Link to="/about">About</Link></li>
+          <ul role="menubar">
+            <li><Link to="/smallitems" role="menuitem">Small Items</Link></li>
+            <li><Link to="/montessori" role="menuitem">Montessori</Link></li>
+            <li><Link to="/furniture" role="menuitem">Furniture</Link></li>
+            <li id="company-logo" role="menuitem"><a href="#home"><img src=""/></a></li>
+            <li><Link to="/custom" role="menuitem">Custom</Link></li>
+            <li><Link to="/contact" role="menuitem">Contact</Link></li>
+            <li><Link to="/about" role="menuitem">About</Link></li>
           </ul>
         </nav>
       </header>
